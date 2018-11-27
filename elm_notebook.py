@@ -39,7 +39,7 @@ def res_dist(x, y, e, n_runs=100, random_state=None):
         e.fit(x_train, y_train)
         train_res.append(e.score(x_train, y_train))
         test_res.append(e.score(x_test, y_test))
-        if (i%(n_runs/10) == 0): print "%d"%i,
+        if (i%(n_runs/10) == 0): print("%d"%i),
 
     print "\nTime: %.3f secs" % (time() - start_time)
 
